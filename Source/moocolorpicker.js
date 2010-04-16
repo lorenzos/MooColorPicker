@@ -12,6 +12,7 @@ requires:
 
 provides: [MooColorPicker]
 
+...
 */
 
 var MooColorPicker = new Class({
