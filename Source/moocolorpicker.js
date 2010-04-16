@@ -56,6 +56,7 @@ var MooColorPicker = new Class({
     selectColor: function(color) {
         if (!color) return this;
         var $this = this;
+		this.selectedColor = color;
         this.container.getElements('div').each(function(item) {
             if (item.getStyle('background-color').toUpperCase() == color.toUpperCase()) {
                 $this.fireEvent('change', [color, item]);
