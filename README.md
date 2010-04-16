@@ -1,7 +1,7 @@
 MooColorPicker
 ==============
 
-A MooTools plugin for choosing a color from a list of square boxes
+A MooTools plugin for choosing a color from a list of square boxes.
 
 
 How to use

@@ -67,6 +67,10 @@ var MooColorPicker = new Class({
 		return this;
     },
 
+    getCurrentColor: function() {
+        return this.selectedColor;
+    },
+
     getContainer: function() {
         return this.container;
     },
