@@ -9,7 +9,7 @@ A MooTools plugin for choosing a color from a list of square boxes.
 How to use
 ----------
 
-Example:
+JS example:
 
 	// Create the color picker with some colors
 	var cp = new MooColorPicker($('cp'), {
@@ -20,9 +20,9 @@ Example:
 	});
 
 	// Display current color
-	$('current_color').set('html', 'Current color is: <b>' + cp.getCurrentColor() + '</b>');
+	$('current_color').set('html', 'Current color is: ' + cp.getCurrentColor());
 	 $('current_color').setStyle('border-bottom-color', cp.getCurrentColor());
 	cp.addEvent('change', function(col, box) {
-		$('current_color').set('html', 'Current color is: <b>' + col + '</b>');
+		$('current_color').set('html', 'Current color is: ' + col);
 		$('current_color').setStyle('border-bottom-color', col);
 	});
