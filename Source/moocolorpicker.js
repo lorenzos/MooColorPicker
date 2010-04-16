@@ -1,6 +1,6 @@
 /*
 ---
-description: A plugin for choosing a color from a list of square boxes
+description: A plugin for choosing a color from a list of square boxes.
 
 license: MIT-style
 
@@ -8,13 +8,10 @@ authors:
 - Lorenzo Stanco
 
 requires:
-core/1.2.1: '*'
+- core/1.2.1: '*'
 
 provides: [MooColorPicker]
 
-DEMO: http://jsfiddle.net/MSPb7/
-
-...
 */
 
 var MooColorPicker = new Class({
