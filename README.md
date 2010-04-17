@@ -66,14 +66,18 @@ Syntax and options:
 	options (object, optional): 
 		Initial options for the class. Options are:
 			colors: An array of strings, like ["#0123456", "#789ABC"].
-			defaultColor: Index of preselected color (default -1, none).
-			className: CSS class for single color <div> boxes (default 'moocolorcheckbox').
-			selectedClassName: CSS class for selected color <div> box (default 'moocolorcheckbox_selected').
+			defaultColor: Index of preselected color 
+				(default -1, none).
+			className: CSS class for single color <div> boxes 
+				(default 'moocolorcheckbox').
+			selectedClassName: CSS class for selected color <div> box 
+				(default 'moocolorcheckbox_selected').
 
 Events:
 
 	change(color, item): 
-		Fires when selected color is changed. Color is selected color, item is the selected color <div> box.
+		Fires when selected color is changed. Color is selected color, 
+		item is the selected color <div> box.
 	
 	mouseenter(div), mouseleave(div):
 		Fires when mouse over or leave a color <div> box.
