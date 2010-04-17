@@ -56,14 +56,19 @@ Implements:
 	Options, Events
 
 Syntax and options:
+
 	var cp = new MooColorPicker(container, options);
+	
 	container: The <div> container (will be empty).
+	
 	options (object, optional): Initial options for the class.
 		colors: An array of strings, like ["#0123456", "#789ABC"].
 		defaultColor: Index of preselected color (default -1, none).
 
 Events:
+
 	change(color, item): 
 		Fires when selcted color is changed. Color is selected color, item is the selected color <div> box.
+		
 	mouseenter(div), mouseleave(div):
-		Fires when mouse over a color <div> box.
+		Fires when mouse over or leave a color <div> box.
