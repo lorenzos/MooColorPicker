@@ -31,10 +31,6 @@ var MooColorPicker = new Class({
 		this.setOptions(options);
 		this.container = $(container);
 		this.container.setStyle('overflow', 'hidden');
-		this.container.addEvents({
-			'mouseenter': function () { $this.fireEvent('mouseenter'); },
-			'mouseleave': function () { $this.fireEvent('mouseleave'); }
-		});
 		this.draw();
 		if (this.options.defaultColor >= 0) this.selectColor(this.options.colors[this.options.defaultColor]);
 		return this;
