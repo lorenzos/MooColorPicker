@@ -53,6 +53,7 @@ Docs
 ----------
 
 Implements:
+
 	Options, Events
 
 Syntax and options:
@@ -73,6 +74,26 @@ Events:
 
 	change(color, item): 
 		Fires when selcted color is changed. Color is selected color, item is the selected color <div> box.
-		
+	
 	mouseenter(div), mouseleave(div):
 		Fires when mouse over or leave a color <div> box.
+
+Methods:
+
+	addColor(color): 
+		Adds a color to the list.
+	
+	removeColor(color): 
+		Removes a color from the list.
+	
+	selectColor(color): 
+		Select a color if it is in the list.
+	
+	removeColor(color): 
+		Removes a color from the list.
+	
+	getCurrentColor():
+		Returs current color as "#HHHHHH" string.
+	
+	getContainer():
+		Return container <div>.
