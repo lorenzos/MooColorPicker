@@ -21,7 +21,7 @@ JS example:
 
 	// Display current color
 	$('current_color').set('html', 'Current color is: ' + cp.getCurrentColor());
-	 $('current_color').setStyle('border-bottom-color', cp.getCurrentColor());
+	$('current_color').setStyle('border-bottom-color', cp.getCurrentColor());
 	cp.addEvent('change', function(col, box) {
 		$('current_color').set('html', 'Current color is: ' + col);
 		$('current_color').setStyle('border-bottom-color', col);
