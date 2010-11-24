@@ -3,7 +3,7 @@ MooColorPicker
 
 A MooTools plugin for choosing a color from a list of square boxes.
 
-![Screenshot](http://github.com/lorenzos/MooColorPicker/raw/master/Graphics/logo.png)
+![Screenshot](https://github.com/lorenzos/MooColorPicker/raw/master/Graphics/logo.png)
 
 
 How to use
