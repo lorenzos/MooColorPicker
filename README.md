@@ -11,6 +11,8 @@ How to use
 
 JS sample:
 
+	#JS
+	
 	// Create the color picker with some colors
 	var cp = new MooColorPicker($('cp'), {
 		colors: [
@@ -27,10 +29,14 @@ JS sample:
 	
 HTML code:
 
+	#HTML
+	
 	<div id="cp">Color picker container</div>
 	<div id="current_color">No color selected</div>
 	
 CSS rules:
+	
+	#CSS
 	
 	div.moocolorcheckbox {
 		width: 24px;
@@ -52,49 +58,32 @@ CSS rules:
 Docs
 ----------
 
-Implements:
+**Implements:** `Options, Events`
 
-	Options, Events
+**Syntax:**
 
-Syntax and options:
-
+	#JS
+	
 	var cp = new MooColorPicker(container, options);
 	
-	container: 
-		The <div> container (will be empty).
+- **`container`**: The `<div>` container (will be empty).
 	
-	options (object, optional): 
-		Initial options for the class. Options are:
-			colors: An array of strings, like ["#0123456", "#789ABC"].
-			defaultColor: Index of preselected color 
-				(default -1, none).
-			className: CSS class for single color <div> boxes 
-				(default 'moocolorcheckbox').
-			selectedClassName: CSS class for selected color <div> box 
-				(default 'moocolorcheckbox_selected').
+**Options** (*object*, optional): Initial options for the class. Options are:
 
-Events:
+- **`colors`**: An array of strings, like `["#0123456", "#789ABC"]`.
+- **`defaultColor`**: Index of preselected color (default `-1`, none).
+- **`className`**: CSS class for single color `<div>` boxes (default `'moocolorcheckbox'`).
+- **`selectedClassName`**: CSS class for selected color `<div>` box (default `'moocolorcheckbox_selected'`).
 
-	change(color, item): 
-		Fires when selected color is changed. Color is selected color, 
-		item is the selected color <div> box.
-	
-	mouseenter(div), mouseleave(div):
-		Fires when mouse over or leave a color <div> box.
+**Events:**
 
-Methods:
+- **`change(color, item)`**: Fires when selected color is changed. `Color` is selected color, `item` is the selected color `<div>` box.
+- **`mouseenter(div)`**, **`mouseleave(div)`**: Fires when mouse over or leave a color `<div>` box.
 
-	addColor(color): 
-		Adds a color to the list.
-	
-	removeColor(color): 
-		Removes a color from the list.
-	
-	selectColor(color): 
-		Select a color if it is in the list.
-	
-	getCurrentColor():
-		Returs current color as "#HHHHHH" string.
-	
-	getContainer():
-		Return container <div>.
+**Methods:**
+
+- **`addColor(color)`**: Adds a color to the list.
+- **`removeColor(color)`**: Removes a color from the list.
+- **`selectColor(color)`**: Select a color if it is in the list.
+- **`getCurrentColor()`**: Returs current color as `"#HHHHHH"` string.
+- **`getContainer()`**: Return container `<div>`.
